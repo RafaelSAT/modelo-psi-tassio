@@ -1,0 +1,395 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background: #F5F7FA;
+  color: #333333;
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  max-width: 1024px;
+}
+
+/* Tipografia */
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+header {
+  background: #EAF2F8;
+  color: #1A5276;  
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: #1A5276;
+  margin: 0px 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #5499C7;
+}
+
+/* Imagem de perfil */
+.perfil-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #1A5276;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Hero */
+#hero {
+  background: #1A5276;
+  color: #FDFEFE;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+/* Botão */
+.btn {
+  background: #437F9D;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: #5499C7;
+}
+
+/* Seções */
+section {
+  background: #FDFEFE;
+  color: #2E4053;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Lista de serviços */
+
+#servicos {
+  background-color: #EAF2F8; /* mesma cor de fundo do #hero */
+  color: #1A5276; /* cor de texto principal */
+}
+
+#servicos h2,
+#servicos h3,
+#servicos p {
+  color: #1A5276;
+}
+
+#servicos .card-servico {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(26, 82, 118, 0.1);
+}
+
+#servicos .card-servico img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+#servicos .descricao {
+  margin-top: 15px;
+}
+
+#servicos .saiba-mais {
+  margin-top: 15px;
+  background: #1A5276;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+#servicos .saiba-mais:hover {
+  background: #154360;
+}
+
+.card-servico {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  width: 100%;
+}
+
+.card-servico img {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.card-servico .descricao {
+  width: 70%;
+  padding: 20px;
+  text-align: left;
+}
+
+.card-servico h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #1A5276;
+}
+
+.card-servico p {
+  font-size: 1em;
+  color: #2E4053;
+  line-height: 1.5;
+}
+
+.saiba-mais {
+  margin-top: 15px;
+  background: #1A5276;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.saiba-mais:hover {
+  background: #154360;
+}
+
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;  
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  font-size: 1em;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+form button {
+  background: #1A5276;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #154360;
+}
+
+/* Footer */
+footer {
+  background: #EAF2F8;
+  font-size: 0.95em;
+  color: #2E4053;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #1A5276;
+  font-size: 1.5em;
+}
+
+.social-icons a:hover {
+  color: #5499C7;
+}
+
+/* Responsivo */
+/* Smartphones: layout empilhado */
+@media (max-width: 430px) {
+  header h1 {
+    font-size: 1.4em;
+  }
+
+  #hero h2 {
+    font-size: 1.5em;
+  }
+
+  section h2 {
+    font-size: 1.6em;
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .perfil-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+
+  .header-flex {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* Tablets: layout intermediário */
+@media (max-width: 820px) {
+  #servicos li {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 10px;
+  }
+
+  .card-servico {
+    flex-direction: column;
+  }
+
+  .card-servico img,
+  .card-servico .descricao {
+    width: 100%;
+  }
+
+  .card-servico img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .card-servico .descricao {
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+/* Layout horizontal para telas maiores */
+@media (min-width: 768px) {
+
+  .perfil-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    margin-bottom: 0;
+  }
+
+  header h1 {
+    margin: 20px 0;
+    flex-grow: 1;
+  }
+
+  nav {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+/* Ajuste geral para telas até 1024px */
+@media (max-width: 1024px) {
+  main {
+    max-width: 100%;
+  }
+}
